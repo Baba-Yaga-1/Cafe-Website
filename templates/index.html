@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+
+ 
+{% block title %} Home 
+{% endblock title %}
+
+
+{% block body %}
+<div class="container-fluid my-4 px-0">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/img/img-1.jfif" class="d-block w-100 h-150" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="static/img/img-3.jfif" class="d-block w-100 h-150" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="static/img/img-4.jfif" class="d-block w-100 h-150" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<div class="container my-3">
+<h2 class="my-4 text-center">Select from the range</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/coffee-latte.jpg" class="d-block w-100" alt = "...">
+
+            <div class="card-body">
+              <p class="card-text"><h5 align="center">CAFFÈ LATTE</h5> <br> </p>
+              <div class="d-flex justify-content-between align-items-center">
+                 <i class="fa fa-clock-o"> 15 Mins</i>
+                          {% comment %} <i class="fa fa-users"> Serves 4</i> {% endcomment %}
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/espresso.jpg" class="d-block w-100" alt = "...">
+
+            <div class="card-body">
+              <p class="card-text"><h5 align="center">AMERICANO (or ESPRESSO AMERICANO)</h5> <br>  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                 <i class="fa fa-clock-o"> 15 Mins</i>
+                          {% comment %} <i class="fa fa-users"> Serves 4</i> {% endcomment %}
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/mocha.jpg" class="d-block w-100" alt = "...">
+
+
+            <div class="card-body">
+              <p class="card-text"><h5 align="center">CAFFÈ MOCHA</h5> <br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                 <i class="fa fa-clock-o"> 20 Mins</i>
+                          {% comment %} <i class="fa fa-users"> Serves 4</i> {% endcomment %}
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/img/brew.jpg" class="d-block w-100" alt = "...">
+
+
+            <div class="card-body">
+              <p class="card-text"><h5 align="center">COLD BREW COFFEE</h5> <br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                 <i class="fa fa-clock-o"> 12 Mins</i>
+                          {% comment %} <i class="fa fa-users"> Serves 4</i> {% endcomment %}
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/irish.jpeg" class="d-block w-100" alt = "...">
+
+            <div class="card-body">
+              <p class="card-text"><h5 align="center">IRISH COFFEE</h5> <br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                 <i class="fa fa-clock-o"> 25 Mins</i>
+                          {% comment %} <i class="fa fa-users"> Serves 4</i> {% endcomment %}
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/nitro.jfif" class="d-block w-100" alt = "...">
+
+
+            <div class="card-body">
+              <p class="card-text"><h5 align="center">NITRO COFFEE</h5> <br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                 <i class="fa fa-clock-o"> 30 Mins</i>
+                          {% comment %} <i class="fa fa-users"> Serves 4</i> {% endcomment %}
+                          <div class="stars">
+                            
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="index.html"> CafeCoffee.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+{% endblock body %}
+
+
+
+{% comment %} <p>
+
+    Welcome to my website
+<br>
+   variable value is <b>{{ variable1 }}</b>
+<br>
+   variable value is <b>{{ variable2 }}</b>
+
+</p> {% endcomment %}
+
+
+{% comment %} <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> {% endcomment %}
+
+</body>
+</html>
